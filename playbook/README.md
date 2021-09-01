@@ -1,20 +1,21 @@
 # Самоконтроль выполненения задания
-
-1. Где расположен файл с `some_fact` из второго пункта задания?
-Файл examp.yam с переменной `some_fact` расположен в катологе group_vars/all
-2. Какая команда нужна для запуска вашего `playbook` на окружении `test.yml`?
-ansible-playbook -i inventory/test.yml site.yml
+```
+1. Где расположен файл с `some_fact` из второго пункта задания? 
+  Файл examp.yam с переменной `some_fact` расположен в катологе group_vars/all
+4. Какая команда нужна для запуска вашего `playbook` на окружении `test.yml`?
+  ansible-playbook -i inventory/test.yml site.yml
 3. Какой командой можно зашифровать файл?
-ansible-vault encrypt group_vars/el/examp.yml
+  ansible-vault encrypt group_vars/el/examp.yml
 4. Какой командой можно расшифровать файл?
-ansible-vault decrypt group_vars/el/examp.yml
+  ansible-vault decrypt group_vars/el/examp.yml
 5. Можно ли посмотреть содержимое зашифрованного файла без команды расшифровки файла? Если можно, то как?
-ansible-vault view group_vars/el/examp.yml 
+  ansible-vault view group_vars/el/examp.yml 
 6. Как выглядит команда запуска `playbook`, если переменные зашифрованы?
-ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
+  ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass
 7. Как называется модуль подключения к host на windows?
-модуль winrm
+  модуль winrm
 8. Приведите полный текст команды для поиска информации в документации ansible для модуля подключений ssh
-ansible-doc ssh
+  ansible-doc ssh
 9. Какой параметр из модуля подключения `ssh` необходим для того, чтобы определить пользователя, под которым необходимо совершать подключение?
-Параметр remote_user позволяет определить пользователя, под которым необходимо совершить подключение.
+  Параметр remote_user позволяет определить пользователя, под которым необходимо совершить подключение.
+```
